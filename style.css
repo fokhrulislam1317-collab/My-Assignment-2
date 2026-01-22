@@ -3,5 +3,114 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    list-style: none;
+
 }
 
+body{
+    background-color:#1A0A2D;
+    max-width: 100%;
+
+}
+
+/* navigation section ...... */
+.top-header .hambarger{
+    display: none;
+}
+
+.container{
+    width: 80%;
+    margin: 0px auto;
+}
+.top-header{
+    border-bottom: 0.2px solid rgb(105, 105, 105);
+    width: 100%;
+}
+
+
+.top-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 1rem;
+
+}
+.top-header nav .logo h1{
+    color: white;
+    font-size: 2.3rem;
+}
+
+.top-header nav .logo h1 span{
+    background: linear-gradient(to top, rgb(221, 221, 13),rgb(243, 24, 144),rgb(176, 9, 182));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.menu ul{
+    display: flex;
+    gap: 1.2rem;
+    font-size: 1rem;
+    color: white;
+}
+
+.nab-btn{
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    background: linear-gradient(186deg, rgba(95, 42, 155, 1) 0%, rgb(201, 30, 101) 50%, rgba(224, 204, 22, 1) 100%);
+    border-radius: 1.2rem;
+    padding: 0.7rem 1.3rem;
+    color: white;
+    
+}
+
+.nab-btn p{
+    text-transform: capitalize;
+    font-size: 1rem;
+}
+
+
+
+@media only screen and (max-width:776px){
+    .container{
+        width: 90%;
+    }
+
+    
+    .top-header .menu{
+        display: none;
+    }
+    .top-header .nab-btn{
+        display: none;
+    }
+
+    .top-header .hambarger{
+        display: block;
+    }
+    .top-header .hambarger img{
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width:576px){
+    .container{
+        width:95%;
+
+    }
+    .top-header .menu{
+        display: none;
+    }
+    .top-header .nab-btn{
+        display: none;
+    }
+
+    .top-header .hambarger{
+        display: block;
+    }
+    .top-header .hambarger img{
+        width: 100%;
+    }
+}
